@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- العيون المرعبة -->
+    <TextView
+        android:id="@+id/eye1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👁️"
+        android:textSize="60sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="32dp"/>
+
+    <TextView
+        android:id="@+id/eye2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="👁️"
+        android:textSize="60sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="32dp"/>
+
+    <!-- الجملة الرئيسية -->
+    <TextView
+        android:id="@+id/mainText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="أنا ظلك الأسود وهفضل وراك لحد ما أخلص عليك"
+        android:textColor="#FF0000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:padding="16dp"/>
+
+    <!-- الاسم -->
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostafa Waled"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_below="@id/mainText"
+        android:layout_marginTop="16dp"/>
+
+    <!-- البار السري (شبه مخفي) -->
+    <View
+        android:id="@+id/secretBar"
+        android:layout_width="100dp"
+        android:layout_height="8dp"
+        android:background="#1A1A1A"
+        android:layout_below="@id/nameText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"/>
+
+    <!-- مكان إدخال الكود (مخفي في البداية) -->
+    <EditText
+        android:id="@+id/codeInput"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secretBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:hint="ادخل الكود هنا"
+        android:textColorHint="#555555"
+        android:textColor="#FFFFFF"
+        android:inputType="numberPassword"
+        android:gravity="center"
+        android:visibility="gone"/>
+
+    <!-- رسالة الاستفزاز -->
+    <TextView
+        android:id="@+id/errorText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@id/codeInput"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
