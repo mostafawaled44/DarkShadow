@@ -9,8 +9,9 @@ buildscript {
 }
 
 allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
+    // مش هنضيف repositories هنا عشان settings.gradle هي اللي هتحددها
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
 }
